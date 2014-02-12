@@ -25,6 +25,6 @@ function Sound(source){
         var playSound = audioContext.createBufferSource();
         playSound.buffer = this.buffer;
         playSound.connect(audioContect.destination);
-        playSound.noteOn(0);
+        playSound.start(0);
     }   
  }
